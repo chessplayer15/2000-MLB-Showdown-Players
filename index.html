@@ -1,0 +1,50 @@
+<!--   -->
+<!Doctype html>
+<html>
+<head>
+<style>
+</style>
+<title>Generic Racing Card Game</title>
+</head>
+<body>
+<script>
+//pitchers(name, points, position, defensive, control, IP, throws, PU, SO, GB, FB, W, S, S+, DB, TR, HR)
+var Angels001 = new player("Chuck Finley", 470, "Starter", 0, 5, 6, "L", 2, 7, 12, 15, 17, 19, "-", "20+", "-", "-");
+var Angels011 = new player("Kent Bottenfield", 330, "Starter", 0, 3, 6, "R", 3, 7, 12, 16, 17, 19, "-", "20+", "-", "-");
+var Angels012 = new player("Ken Hill", 170, "Starter", 0, 0, 6, "R", 2, 6, 13, 18, 19, "20+", "-", "-", "-", "-");
+var Angels013 = new player("Steve Sparks", 150, "Starter", 0, 0, 6, "R", 4, 7, 12, 18, 19, "20+", "-", "-", "-", "-");
+var Angels014 = new player("Tim Belcher", 110, "Starter", 0, 0, 6, "R", 3, 5, 12, 18, "-", 19, "-", "20+", "-", "-");
+var Astros001 = new player("Jose Lima", 460, "Starter", 0, 3, 7, "R", 4, 9, 13, 17, "-", 19, "-", "20+", "-", "-");
+var Astros011 = new player("Mike Hampton", 470, "Starter", 0, 3, 7, "L", 2, 7, 14, 16, 18, "19+", "-", "-", "-", "-");
+var Astros012 = new player("Scott Elarton", 440, "Starter", 0, 4, 6, "R", 3, 9, 12, 16, 17, 19, "-", "20+", "-", "-");
+var Astros013 = new player("Shane Reynolds", 470, "Starter", 0, 3, 7, "R", 2, 8, 14, 17, "-", 19, "-", "20+", "-", "-");
+var Astros014 = new player("Octavio Dotel", 350, "Starter", 0, 3, 6, "R", 1, 8, 11, 16, 19, "-", "-", "20+", "-", "-");
+var Athletics001 = new player("Tim Hudson", 480, "Starter", 0, 5, 6, "R", 3, 8, 13, 15, 17, 19, "-", "20+", "-", "-");
+var Athletics011 = new player("Gil Heredia", 440, "Starter", 0, 4, 6, "R", 3, 6, 12, 16, "-", 19, "-", "20+", "-", "-");
+var Athletics012 = new player("Kevin Appier", 340, "Starter", 0, 3, 6, "R", 3, 6, 12, 16, 17, 19, "-", "20+", "-", "-");
+var Athletics013 = new player("Omar Olivares", 340, "Starter", 0, 3, 6, "R", 2, 4, 11, 16, 17, 19, "-", "20+", "-", "-");
+//var Athletics014 = new player("", -1, "Starter", 0, -1, -1, "R", 1, 8, 11, 16, 19, "-", "-", "20+", "-", "-");
+
+//batters(name, points, position, defensive, on-base, speed, bats, PU, SO, GB, FB, W, S, S+, DB, TR, HR)
+var Angels002 = new player("Ben Molina", 120, "C", 8, 6, 10, "R", "-", "-", 2, 3, 6, 15, "-", 18, "-", "19+");
+var Angels003 = new player("Mo Vaughn", 300, "1B", 0, 8, 10, "L", "-", 3, 4, 5, 9, 15, "-", 16, "-", "17+");
+var Angels004 = new player("Adam Kennedy", 260, "2B", 2, 7, 20, "L", "-", "-", 1, 4, 5, 12, 13, 17, 18, "19+");
+var Angels005 = new player("Troy Glaus", 240, "3B", 1, 7, 15, "R", "-", 2, "-", 4, 11, 14, "-", 16, "-", "17+");
+var Angels006 = new player("Jeff Huson", 160, "SS", 4, 7, 20, "L", "-", "-", 5, "-", 7, 18, "19+", "-", "-", "-");
+var Angels007 = new player("Darin Erstad", 140, "LF", 2, 6, 15, "L", "-", "-", 2, 3, 5, 15, 16, 17, 18, "19+");
+var Angels008 = new player("Garrett Anderson", 250, "CF", 3, 7, 15, "L", "-", "-", 3, 4, "-", 14, "-", 17, "-", "18+");
+var Angels009 = new player("Tim Salmon", 290, "RF", 1, 8, 15, "R", "-", 1, "-", 3, 11, 15, "-", 17, "-", "18+");
+var Angels010 = new player("Scott Spiezio", 210, "DH", 0, 7, 10, "S", "-", "-", "-", 4, 9, 11, "-", 17, "-", "18+");
+var Astros002 = new player("Mitch Melusky", 400, "C", 6, 10, 15, "S", "-", 1, 3, 5, 10, 15, "-", 19, "-", "20+");
+var Astros003 = new player("Jeff Bagwell", 570, "1B", 0, 10, 20, "L", "-", 1, "-", 3, 12, 15, 16, 17, "-", "18+");
+var Astros004 = new player("Craig Biggio", 350, "2B", 3, 9, 20, "R", "-", 1, 4, 5, 10, 15, 16, 19, "-", "20+");
+var Astros005 = new player("Ken Caminiti", 330, "3B", 1, 9, 15, "S", "-", 1, 3, 5, 11, 16, 17, 18, "-", "19+");
+var Astros006 = new player("Tim Bogar", 160, "SS", 5, 7, 15, "R", "-", "-", 3, 6, 10, 16, "-", 18, 19, "20+");
+var Astros007 = new player("Daryle Ward", 450, "LF", 0, 9, 10, "L", "-", 2, 3, 4, 5, 14, "-", 16, "-", "17+");
+var Astros008 = new player("Roger Cedeno", 430, "CF", 1, 10, 20, "S", "-", 3, 5, "-", 9, 14, 17, 19, 20, "21+");
+var Astros009 = new player("Moises Alou", 470, "RF", 0, 9, 15, "R", "-", "-", 1, 4, 8, 13, 14, 16, "-", "17+");
+var Astros010 = new player("Richard Hidalgo", 200, "DH", 0, 7, 15, "R", "-", "-", 1, 4, 12, 13, 14, 17, "-", "18+");
+
+</script>
+</body>
+</html>
